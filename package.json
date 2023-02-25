@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "author": "Jonathan Steele <jonathan@steele.pro>",
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/node": "2.9.8",
+    "google-spreadsheet": "3.3.0",
+    "stripe": "11.12.0"
+  }
+}
