@@ -1,7 +1,7 @@
 import Stripe from 'stripe'
 import { GoogleSpreadsheet } from 'google-spreadsheet'
 
-interface SpectatorSheetRowProps {
+interface SheetRowItemProps {
   id: string
   name: string
   email: string
@@ -54,7 +54,7 @@ const addSpectatorSheetRow = async ({
         (acc, f) => ({ ...acc, [f.key]: f[f.type]?.['value'] }),
         {}
       )
-    } as SpectatorSheetRowProps
+    } as SheetRowItemProps
 
     await sheet.addRow({ ...row })
   }
